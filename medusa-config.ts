@@ -5,7 +5,7 @@ loadEnv(process.env.NODE_ENV || 'development', process.cwd())
 module.exports = defineConfig({
   modules: [
     {
-      resolve: './src/modules/usertest',
+      resolve: './src/modules/hello',
     },
   ],
   projectConfig: {
