@@ -7,9 +7,19 @@ module.exports = defineConfig({
     {
       resolve: './src/modules/hello',
     },
+    {
+      resolve: './src/modules/adddetailsinproduct',
+    },
+    {
+      resolve: "@medusajs/medusa/event-bus-redis",
+      options: { 
+        redisUrl: process.env.REDIS_URL,
+      },
+    },
   ],
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
+    redisUrl: process.env.REDIS_URL,
     http: {
       storeCors: process.env.STORE_CORS!,
       adminCors: process.env.ADMIN_CORS!,
