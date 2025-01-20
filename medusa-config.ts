@@ -15,7 +15,7 @@ module.exports = defineConfig({
       options: { 
         redisUrl: process.env.REDIS_URL,
       },
-    },
+    }
   ],
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
